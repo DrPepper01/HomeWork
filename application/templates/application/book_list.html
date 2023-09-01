@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Books</h1>
+        {{ books.title }}
+        {{ books.info }}
+        {{ books.price }}
+{% for book in books %}
+<a>Название: </a>
+{{ book.title }}
+<p></p>
+<a>Описание: </a>
+<p></p>
+{{ book.info }}
+<p></p>
+<a>Цена: </a>
+{{ book.price }}тг
+<p>************</p>
+
+
+{% endfor %}
+</body>
+</html>
